@@ -395,3 +395,30 @@ footer {
 .hamburger.is-active .hamburger__filling:after {
     transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
+
+
+// Styling specifically for this demo
+body {
+  background: #5cd6cb;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.container {
+  text-align: center;
+}
+
+.hamburger {
+  margin: auto;
+}
+
+.clickme {
+  margin: 3em 0 0;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
