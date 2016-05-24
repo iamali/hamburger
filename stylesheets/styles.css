@@ -114,8 +114,8 @@ body {
     transition: transform .25s cubic-bezier(.70,-.60,.260,1.60), opacity .25s ease;
 }   
         
-.hamburger__filling:before,
-.hamburger__filling:after {
+.hamburger:before,
+.hamburger:after {
     width: 28px;
     height: 4px;
     background: #fff;
@@ -127,12 +127,12 @@ body {
 }
 
 // top line
-.hamburger__filling:before {
+.hamburger:before {
     top: 0;
 }
 
 // bottom line
-.hamburger__filling:after {
+.hamburger:after {
     bottom: 0;
 }
 
@@ -143,23 +143,11 @@ body {
 }
             
 // top line
-.hamburger.is-active .hamburger__filling:before {
+.hamburger.is-active .hamburger:before {
     transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
 // bottom line
-.hamburger.is-active .hamburger__filling:after {
+.hamburger.is-active .hamburger:after {
     transform: translate3d(0, -10px, 0) rotate(-45deg);
-}
-
-
-// Styling specifically for this demo
-body {
-  background: #5cd6cb;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Arial;
 }
