@@ -322,3 +322,76 @@ footer {
     color:#444;
   }
 }
+
+
+.hamburger__bun {
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger {
+    position: relative;
+    width: 28px;
+    height: 24px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+    
+// middle line
+.hamburger__filling {
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    transition: transform .25s cubic-bezier(.70,-.60,.260,1.60), opacity .25s ease;
+}   
+        
+.hamburger__filling:before,
+.hamburger__filling:after {
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    transition: transform .25s cubic-bezier(.70,-.60,.260,1.60), translate3d .25s cubic-bezier(.70,-.60,.260,1.60);
+}
+
+// top line
+.hamburger__filling:before {
+    top: 0;
+}
+
+// bottom line
+.hamburger__filling:after {
+    bottom: 0;
+}
+
+// middle line
+.hamburger.is-active .hamburger__filling {
+    opacity: 0;
+    transform: translateX(-25%);
+}
+            
+// top line
+.hamburger.is-active .hamburger__filling:before {
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+// bottom line
+.hamburger.is-active .hamburger__filling:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+}
