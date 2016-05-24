@@ -1,5 +1,7 @@
-# Hamburger
+Hamburger
+===
 Animating hamburger type thing.
 
-### Demo
+Demo
+---------------
 http://iamali.github.io/hamburger/
